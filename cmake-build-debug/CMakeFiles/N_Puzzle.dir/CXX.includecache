@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/dtomchys/Study/N-Puzzle/inc/ArgumentHandler.h
+general.h
+/Users/dtomchys/Study/N-Puzzle/inc/general.h
+
+/Users/dtomchys/Study/N-Puzzle/inc/ErrorManager.h
+general.h
+/Users/dtomchys/Study/N-Puzzle/inc/general.h
+
+/Users/dtomchys/Study/N-Puzzle/inc/general.h
+iostream
+-
+cstdlib
+-
+vector
+-
+unistd.h
+-
+ErrorManager.h
+/Users/dtomchys/Study/N-Puzzle/inc/ErrorManager.h
+ArgumentHandler.h
+/Users/dtomchys/Study/N-Puzzle/inc/ArgumentHandler.h
+
+/Users/dtomchys/Study/N-Puzzle/main.cpp
+inc/general.h
+/Users/dtomchys/Study/N-Puzzle/inc/general.h
+
+/Users/dtomchys/Study/N-Puzzle/src/ArgumentHandler.cpp
+../inc/ArgumentHandler.h
+/Users/dtomchys/Study/N-Puzzle/inc/ArgumentHandler.h
+
+/Users/dtomchys/Study/N-Puzzle/src/ErrorManager.cpp
+../inc/ErrorManager.h
+/Users/dtomchys/Study/N-Puzzle/inc/ErrorManager.h
+
