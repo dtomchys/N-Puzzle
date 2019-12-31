@@ -7,7 +7,6 @@
 ArgumentHandler::ArgumentHandler(char** arguments, int argumentCount) {
     for (int i = 1; i < argumentCount; ++i) {
         this->arguments.push_back(arguments[i]);
-        std::cout << this->arguments[i - 1] << std::endl;
     }
 }
 
@@ -62,4 +61,41 @@ void ArgumentHandler::checkAndSetHeuristicConfiguration(std::string func, Puzzle
         config->func = E_MANHATTAN;
     else
         ErrorManager::shared().showArgErrorAndExit(INVALID_FUNC);
+}
+
+std::ostream& operator<<(std::ostream& os, const PuzzleConfiguration& conf) {
+    std::string output;
+    output = "Search algorithm: ";
+    switch (conf.algo) {
+        case E_ASEARCH:
+            output += "A search algorithm.";
+            break;
+        default:
+            output += "unknown algo.";
+            break;
+    }
+    output += "\n";
+    output += "Heuristic function: ";
+    switch (conf.func) {
+        case E_MANHATTAN:
+            output += "Manhattan.";
+            break;
+        default:
+            output += "Undefined.";
+            break;
+    }
+    output += "\n";
+    output += "Puzzle source: ";
+    switch (conf.source) {
+        case E_RAND:
+            output += "Randomly generated";
+            break;
+        case E_FILE:
+            const std::string *result = conf.getSourcePath();
+            output += *result + ".";
+            break;
+    }
+    output += "\n";
+    os << output;
+    return os;
 }

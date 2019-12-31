@@ -13,6 +13,8 @@ enum PuzzleSource { E_RAND, E_FILE };
 
 struct PuzzleConfiguration {
 
+    friend std::ostream& operator<<(std::ostream& os, const PuzzleConfiguration& conf);
+
 private:
     std::string         *source_path;
 
@@ -23,11 +25,11 @@ public:
 
 public:
     void setSourcePath(std::string source_path) {
-        this->source = E_RAND;
-        this->source_path = &source_path;
+        this->source = E_FILE;
+        this->source_path = new std::string(source_path);
     }
 
-    std::string* getSourcePath() {
+    std::string* getSourcePath() const {
         if (this->source == E_RAND) {
             return  NULL;
         } else {
