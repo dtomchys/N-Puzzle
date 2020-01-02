@@ -3,6 +3,6 @@
 
 # include <iostream>
 # include <vector>
-# define PUZZLE std::vector<std::vector<int>>
+# define PUZZLE std::vector<std::vector<unsigned int>>
 
 #endif

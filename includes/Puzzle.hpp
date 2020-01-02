@@ -3,16 +3,28 @@
 
 # include "npuzzle.hpp"
 
+class Puzzle;
+typedef  void (Puzzle::*PuzzleHeuristic)();  // Please do this!
+
 class Puzzle
 {
-	public:
-		Puzzle();
-		~Puzzle();
+public:
+  static Puzzle& getInstance();
 
-	private:
-		PUZZLE startState; // 2D vector array that describes start state of N-puzzle
-		PUZZLE finalState; // 2D vector array that describes target state of N-puzzle
-		size_t boardSize;
-}
+// Other non-static member functions
+private:
+    Puzzle();                              // Private constructor
+    ~Puzzle() {}
+    Puzzle(const Puzzle&);                 // Prevent copy-construction
+    Puzzle& operator=(const Puzzle&);      // Prevent assignment
+
+    void _countTargetState();
+
+    PUZZLE _startState;
+    PUZZLE _targetState;;
+    size_t _boardSize;
+    PuzzleHeuristic _heuristic;
+    void _manhattanDistance();
+};
 
 #endif

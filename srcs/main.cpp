@@ -1,11 +1,14 @@
 #include "npuzzle.hpp"
+#include "Puzzle.hpp"
 using namespace std;
 
 int main(int ac, char **av)
 {
-	PUZZLE puzzle{{ 3, 2, 6 },
+	PUZZLE board{{ 3, 2, 6 },
 					{ 1, 4, 0 },
 					{ 8, 7, 5 }};
+
+    Puzzle& puzzle = Puzzle::getInstance();
 
 	//      for(int y=0;y<puzzle.size();++y)
     // {
