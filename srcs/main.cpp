@@ -4,11 +4,8 @@ using namespace std;
 
 int main(int ac, char **av)
 {
-	PUZZLE board{{ 3, 2, 6 },
-					{ 1, 4, 0 },
-					{ 8, 7, 5 }};
-
     Puzzle& puzzle = Puzzle::getInstance();
+    puzzle.solve();
 
 	//      for(int y=0;y<puzzle.size();++y)
     // {

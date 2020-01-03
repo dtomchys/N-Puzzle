@@ -2,14 +2,22 @@
 # define PUZZLE_HPP
 
 # include "npuzzle.hpp"
+# include <list>
+# include "Node.hpp"
 
 class Puzzle;
-typedef  void (Puzzle::*PuzzleHeuristic)();  // Please do this!
+typedef unsigned int (Puzzle::*PuzzleHeuristic)(void);  // Please do this!
+
+// struct Tile
+// {
+// 	unsigned int x, y;
+// };
 
 class Puzzle
 {
 public:
   static Puzzle& getInstance();
+  void solve();
 
 // Other non-static member functions
 private:
@@ -18,13 +26,14 @@ private:
     Puzzle(const Puzzle&);                 // Prevent copy-construction
     Puzzle& operator=(const Puzzle&);      // Prevent assignment
 
-    void _countTargetState();
+    //Tile _findTilePosition(PUZZLE state, unsigned int tile);
+    unsigned int _manhattanDistance(void);
+    PUZZLE _countTargetState(void);
 
     PUZZLE _startState;
     PUZZLE _targetState;;
-    size_t _boardSize;
     PuzzleHeuristic _heuristic;
-    void _manhattanDistance();
+    size_t _boardSize;
 };
 
 #endif

@@ -1,8 +1,10 @@
 #include "Node.hpp"
 
-Node::Node(std::vector<std::vector<int>> puzzle)
+Node::Node(PUZZLE puzzle, unsigned int h)
 {
+	//std::cout << "ss" << std::endl;
 	this->puzzle = puzzle;
+	this->h = h;
 }
 
 void Node::setParent(Node *parent)
