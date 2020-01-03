@@ -204,6 +204,60 @@ src/ErrorManager.cpp.s:
 	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.s
 .PHONY : src/ErrorManager.cpp.s
 
+src/Node.o: src/Node.cpp.o
+
+.PHONY : src/Node.o
+
+# target to build an object file
+src/Node.cpp.o:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/Node.cpp.o
+.PHONY : src/Node.cpp.o
+
+src/Node.i: src/Node.cpp.i
+
+.PHONY : src/Node.i
+
+# target to preprocess a source file
+src/Node.cpp.i:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/Node.cpp.i
+.PHONY : src/Node.cpp.i
+
+src/Node.s: src/Node.cpp.s
+
+.PHONY : src/Node.s
+
+# target to generate assembly for a file
+src/Node.cpp.s:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/Node.cpp.s
+.PHONY : src/Node.cpp.s
+
+src/Puzzle.o: src/Puzzle.cpp.o
+
+.PHONY : src/Puzzle.o
+
+# target to build an object file
+src/Puzzle.cpp.o:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o
+.PHONY : src/Puzzle.cpp.o
+
+src/Puzzle.i: src/Puzzle.cpp.i
+
+.PHONY : src/Puzzle.i
+
+# target to preprocess a source file
+src/Puzzle.cpp.i:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.i
+.PHONY : src/Puzzle.cpp.i
+
+src/Puzzle.s: src/Puzzle.cpp.s
+
+.PHONY : src/Puzzle.s
+
+# target to generate assembly for a file
+src/Puzzle.cpp.s:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.s
+.PHONY : src/Puzzle.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +276,12 @@ help:
 	@echo "... src/ErrorManager.o"
 	@echo "... src/ErrorManager.i"
 	@echo "... src/ErrorManager.s"
+	@echo "... src/Node.o"
+	@echo "... src/Node.i"
+	@echo "... src/Node.s"
+	@echo "... src/Puzzle.o"
+	@echo "... src/Puzzle.i"
+	@echo "... src/Puzzle.s"
 .PHONY : help
 
 

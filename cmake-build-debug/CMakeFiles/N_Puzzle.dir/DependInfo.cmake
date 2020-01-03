@@ -7,6 +7,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/dtomchys/Study/N-Puzzle/main.cpp" "/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/main.cpp.o"
   "/Users/dtomchys/Study/N-Puzzle/src/ArgumentHandler.cpp" "/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o"
   "/Users/dtomchys/Study/N-Puzzle/src/ErrorManager.cpp" "/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o"
+  "/Users/dtomchys/Study/N-Puzzle/src/Node.cpp" "/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/Node.cpp.o"
+  "/Users/dtomchys/Study/N-Puzzle/src/Puzzle.cpp" "/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
