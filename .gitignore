@@ -1,4 +1,3 @@
-cmake-build-debug/
 *.o
 a.out
 .*
