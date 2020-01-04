@@ -18,4 +18,13 @@
 #include "Node.hpp"
 #include "Puzzle.hpp"
 
+inline bool isNumber(const std::string & s) {
+    if(s.empty() || ((!isdigit(s[0])) && (s[0] != '-') && (s[0] != '+'))) return false;
+
+    char * p;
+    strtol(s.c_str(), &p, 10);
+
+    return (*p == 0);
+}
+
 #endif //N_PUZZLE_GENERAL_H

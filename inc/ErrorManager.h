@@ -7,7 +7,7 @@
 
 #include "general.h"
 
-enum ARG_ERRORS { INVALID_FILE, INVALID_ALGO, INVALID_FUNC };
+enum ARG_ERRORS { INVALID_FILE, INVALID_ALGO, INVALID_FUNC, INVALID_SIZE, INVALID_ITERATIONS };
 
 class ErrorManager {
 private:

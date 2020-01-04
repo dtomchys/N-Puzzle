@@ -25,6 +25,12 @@ void ErrorManager::showArgErrorAndExit(ARG_ERRORS error) {
         case INVALID_FUNC:
             errorMessage = "Invalid heuristic function option! Please, choose a correct one.";
             break;
+        case INVALID_SIZE:
+            errorMessage = "Invalid puzzle size to generate!";
+            break;
+        case INVALID_ITERATIONS:
+            errorMessage = "Invalid iteration number to generate puzzle!";
+            break;
     }
     std::cerr << errorMessage << std::endl;
     exit(1);
