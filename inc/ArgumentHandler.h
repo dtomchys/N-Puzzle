@@ -5,7 +5,8 @@
 #ifndef N_PUZZLE_ARGUMENTHANDLER_H
 #define N_PUZZLE_ARGUMENTHANDLER_H
 
-#include "general.h"
+#include <cstdlib>
+#include <iostream>
 
 enum SearchAlgorithm { E_ASEARCH };
 enum HeuristicFunction { E_MANHATTAN };
@@ -24,6 +25,7 @@ public:
     SearchAlgorithm     algo;
     HeuristicFunction   func;
     PuzzleSource        source;
+    bool                solvable;
 
 public:
     std::string* getSourcePath() const {
@@ -35,6 +37,7 @@ public:
     }
     void setSourcePath(std::string source_path) {
         this->source = E_FILE;
+        this->solvable = false;
         this->source_path = new std::string(source_path);
     }
 
@@ -52,6 +55,8 @@ public:
         this->puzzleIterations = iterationNumber;
     }
 };
+
+#include "general.h"
 
 class ArgumentHandler {
 

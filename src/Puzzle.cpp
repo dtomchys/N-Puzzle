@@ -1,22 +1,21 @@
-#include "../inc/general.h"
+#include "../inc/Puzzle.hpp"
 
-Puzzle::Puzzle() {
-	//std::cout << "Constructor" << std::endl;
-	this->_startState = {{ 1, 2, 3 },
-					{ 0, 4, 6 },
-					{ 7, 5, 8 }};
-	this->_boardSize = 3;
-	this->_heuristic = &Puzzle::_manhattanDistance;
-	this->_targetState = this->_countTargetState();
-	// for(int y=0; y < this->_targetState.size();++y)
- //    {
- //        for(int x=0;x<this->_targetState[y].size();++x)
- //        {
- //            std::cout<<this->_targetState[y][x]<<std::ends;
- //        }
- //        std::cout<<std::endl;
- //    }
-	// (this->*_heuristic)(6);
+Puzzle::Puzzle() {}
+
+void Puzzle::setInitialState(PUZZLE &map, size_t size, HeuristicFunction func) {
+    this->_boardSize = size;
+    this->_startState = map;
+    switch (func) {
+        case E_MANHATTAN: {
+            this->_heuristic = &Puzzle::_manhattanDistance;
+            break;
+        }
+        default: {
+            this->_heuristic = &Puzzle::_manhattanDistance;
+            break;
+        }
+    }
+    this->_targetState = this->_countTargetState();
 }
 
 Puzzle& Puzzle::getInstance()

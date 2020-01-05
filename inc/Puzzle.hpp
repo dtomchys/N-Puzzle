@@ -2,7 +2,6 @@
 # define PUZZLE_HPP
 
 # include "general.h"
-
 class Puzzle;
 typedef unsigned int (Puzzle::*PuzzleHeuristic)(void);  // Please do this!
 
@@ -15,6 +14,7 @@ class Puzzle
 {
 public:
   static Puzzle& getInstance();
+  void setInitialState(PUZZLE &map, size_t size, HeuristicFunction func);
   void solve();
 
 // Other non-static member functions

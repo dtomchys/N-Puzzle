@@ -1,10 +1,9 @@
-
+//
+// Created by Denys Tomchyshen on 30.12.2019.
 //
 #include "../inc/ArgumentHandler.h"
 
 ArgumentHandler::ArgumentHandler(char** arguments, int argumentCount) {
-//
-// Created by Denys Tomchyshen on 30.12.2019.
     for (int i = 1; i < argumentCount; ++i) {
         this->arguments.push_back(arguments[i]);
     }
@@ -36,6 +35,9 @@ PuzzleConfiguration* ArgumentHandler::getPuzzleConfiguration() {
             case 'i':
                 checkAndSetPuzzleIterations(arguments[i + 1], configResult);
                 i++;
+                break;
+            case 'u':
+                configResult->solvable = true;
                 break;
             default:
                 ErrorManager::shared().showUsage();

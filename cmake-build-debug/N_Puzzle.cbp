@@ -95,6 +95,12 @@
 		<Unit filename="/Users/dtomchys/Study/N-Puzzle/src/Puzzle.cpp">
 			<Option target="N_Puzzle"/>
 		</Unit>
+		<Unit filename="/Users/dtomchys/Study/N-Puzzle/src/PuzzleGenerator.cpp">
+			<Option target="N_Puzzle"/>
+		</Unit>
+		<Unit filename="/Users/dtomchys/Study/N-Puzzle/src/PuzzleParser.cpp">
+			<Option target="N_Puzzle"/>
+		</Unit>
 		<Unit filename="/Users/dtomchys/Study/N-Puzzle/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -1,12 +1,19 @@
 #include "inc/general.h"
 
 int main(int argc, char **argv) {
+    srand(time(NULL));
     ArgumentHandler *argumentHandler = new ArgumentHandler(argv, argc);
-    PuzzleConfiguration *configurtion = argumentHandler->getPuzzleConfiguration();
-    std::cout << (*configurtion);
+    PuzzleConfiguration *configuration = argumentHandler->getPuzzleConfiguration();
+    Puzzle& puzzle = Puzzle::getInstance();
+    std::cout << (*configuration);
+    if (configuration->source == E_RAND) {
+        PuzzleGenerator generator = PuzzleGenerator(configuration);
+        generator.setupPuzzle(puzzle);
+    } else {
+
+    }
 
     //    Dasha
-    Puzzle& puzzle = Puzzle::getInstance();
     puzzle.solve();
 
     //      for(int y=0;y<puzzle.size();++y)

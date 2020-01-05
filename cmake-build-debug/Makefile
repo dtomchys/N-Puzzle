@@ -258,6 +258,60 @@ src/Puzzle.cpp.s:
 	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.s
 .PHONY : src/Puzzle.cpp.s
 
+src/PuzzleGenerator.o: src/PuzzleGenerator.cpp.o
+
+.PHONY : src/PuzzleGenerator.o
+
+# target to build an object file
+src/PuzzleGenerator.cpp.o:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o
+.PHONY : src/PuzzleGenerator.cpp.o
+
+src/PuzzleGenerator.i: src/PuzzleGenerator.cpp.i
+
+.PHONY : src/PuzzleGenerator.i
+
+# target to preprocess a source file
+src/PuzzleGenerator.cpp.i:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.i
+.PHONY : src/PuzzleGenerator.cpp.i
+
+src/PuzzleGenerator.s: src/PuzzleGenerator.cpp.s
+
+.PHONY : src/PuzzleGenerator.s
+
+# target to generate assembly for a file
+src/PuzzleGenerator.cpp.s:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.s
+.PHONY : src/PuzzleGenerator.cpp.s
+
+src/PuzzleParser.o: src/PuzzleParser.cpp.o
+
+.PHONY : src/PuzzleParser.o
+
+# target to build an object file
+src/PuzzleParser.cpp.o:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.o
+.PHONY : src/PuzzleParser.cpp.o
+
+src/PuzzleParser.i: src/PuzzleParser.cpp.i
+
+.PHONY : src/PuzzleParser.i
+
+# target to preprocess a source file
+src/PuzzleParser.cpp.i:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.i
+.PHONY : src/PuzzleParser.cpp.i
+
+src/PuzzleParser.s: src/PuzzleParser.cpp.s
+
+.PHONY : src/PuzzleParser.s
+
+# target to generate assembly for a file
+src/PuzzleParser.cpp.s:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.s
+.PHONY : src/PuzzleParser.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -282,6 +336,12 @@ help:
 	@echo "... src/Puzzle.o"
 	@echo "... src/Puzzle.i"
 	@echo "... src/Puzzle.s"
+	@echo "... src/PuzzleGenerator.o"
+	@echo "... src/PuzzleGenerator.i"
+	@echo "... src/PuzzleGenerator.s"
+	@echo "... src/PuzzleParser.o"
+	@echo "... src/PuzzleParser.i"
+	@echo "... src/PuzzleParser.s"
 .PHONY : help
 
 

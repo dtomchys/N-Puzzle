@@ -7,6 +7,8 @@
 
 #define PUZZLE std::vector<std::vector<unsigned int>>
 
+typedef struct PuzzleConfiguration;
+
 #include <iostream>
 #include <cstdlib>
 #include <vector>
@@ -17,13 +19,13 @@
 #include "ArgumentHandler.h"
 #include "Node.hpp"
 #include "Puzzle.hpp"
+#include "PuzzleGenerator.h"
+
 
 inline bool isNumber(const std::string & s) {
     if(s.empty() || ((!isdigit(s[0])) && (s[0] != '-') && (s[0] != '+'))) return false;
-
     char * p;
     strtol(s.c_str(), &p, 10);
-
     return (*p == 0);
 }
 

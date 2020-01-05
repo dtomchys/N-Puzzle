@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o"
   "CMakeFiles/N_Puzzle.dir/src/Node.cpp.o"
   "CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o"
+  "CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o"
+  "CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.o"
   "N_Puzzle"
   "N_Puzzle.pdb"
 )
