@@ -37,7 +37,7 @@ PuzzleConfiguration* ArgumentHandler::getPuzzleConfiguration() {
                 i++;
                 break;
             case 'u':
-                configResult->solvable = true;
+                configResult->solvable = false;
                 break;
             default:
                 ErrorManager::shared().showUsage();
@@ -52,6 +52,7 @@ PuzzleConfiguration* ArgumentHandler::makeDefaultConfiguration() {
     configResult->algo = E_ASEARCH;
     configResult->func = E_MANHATTAN;
     configResult->source = E_RAND;
+    configResult->solvable = true;
     return configResult;
 }
 
