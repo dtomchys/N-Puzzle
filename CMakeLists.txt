@@ -3,4 +3,5 @@ project(N_Puzzle)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(N_Puzzle main.cpp src/ErrorManager.cpp src/ArgumentHandler.cpp src/Node.cpp src/Puzzle.cpp)
+add_executable(N_Puzzle main.cpp src/ErrorManager.cpp src/ArgumentHandler.cpp
+        src/PuzzleGenerator.cpp src/MapParser.cpp src/Node.cpp src/Puzzle.cpp)

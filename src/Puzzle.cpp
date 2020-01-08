@@ -1,48 +1,27 @@
-#include "../inc/general.h"
+#include "../inc/Puzzle.hpp"
 
-Puzzle::Puzzle() {
-//    this->_startState = {{ 1, 2, 3, 4 },
-//                         { 11, 12, 14, 5 },
-//                         { 13, 0, 9, 6 },
-//                         { 10, 8, 15, 7} };
+Puzzle::Puzzle() {}
 
-    this->_startState = {{ 3, 14, 15, 13 },
-                         { 1, 9, 11, 5 },
-                         { 12, 7, 4, 2 },
-                         { 0, 10, 6, 8} };
-
-    this->_boardSize = 4;
-
-//    this->_startState = {{ 0, 5, 3 },
-//                         { 2, 6, 8 },
-//                         { 4, 1, 7 }};
-//
-//
-//
-//    this->_boardSize = 3;
-//            this->_startState = {{ 6, 1, 5 },
-//					{ 7, 0, 8 },
-//					{ 2, 4, 3 }};
-//
-//
-
-//    this->_boardSize = 3;
-//
-//        this->_startState = {{ 3, 1, 2 },
-//					{ 4, 7, 6 },
-//					{ 5, 8, 0 }};
-
-//
-//    this->_boardSize = 3;
-//    this->_startState = {{ 1, 2, 3 },
-//					{ 0, 4, 6 },
-//					{ 7, 5, 8 }};
-//
-//
-//
-//    this->_boardSize = 3;
-	this->_heuristic = &Puzzle::_manhattanDistance;
-	this->_targetState = this->_countTargetState();
+void Puzzle::setInitialState(PUZZLE &map, size_t size, HeuristicFunction func) {
+    this->_boardSize = size;
+    this->_startState = map;
+    switch (func) {
+        case E_MANHATTAN: {
+            this->_heuristic = &Puzzle::_manhattanDistance;
+            break;
+        }
+        default: {
+            this->_heuristic = &Puzzle::_manhattanDistance;
+            break;
+        }
+    }
+    this->_targetState = this->_countTargetState();
+        for(int y=0; y < this->_startState.size();++y) {
+        for(int x=0;x<this->_startState[y].size();++x) {
+            std::cout<<this->_startState[y][x]<< " ";
+        }
+        std::cout<<std::endl;
+    }
 }
 
 Puzzle& Puzzle::getInstance()

@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dariadryha/N-Puzzle
+CMAKE_SOURCE_DIR = /Users/dtomchys/Study/N-Puzzle
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dariadryha/N-Puzzle/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/dtomchys/Study/N-Puzzle/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dariadryha/N-Puzzle/cmake-build-debug/CMakeFiles /Users/dariadryha/N-Puzzle/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles /Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dariadryha/N-Puzzle/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -204,6 +204,33 @@ src/ErrorManager.cpp.s:
 	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.s
 .PHONY : src/ErrorManager.cpp.s
 
+src/MapParser.o: src/MapParser.cpp.o
+
+.PHONY : src/MapParser.o
+
+# target to build an object file
+src/MapParser.cpp.o:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o
+.PHONY : src/MapParser.cpp.o
+
+src/MapParser.i: src/MapParser.cpp.i
+
+.PHONY : src/MapParser.i
+
+# target to preprocess a source file
+src/MapParser.cpp.i:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.i
+.PHONY : src/MapParser.cpp.i
+
+src/MapParser.s: src/MapParser.cpp.s
+
+.PHONY : src/MapParser.s
+
+# target to generate assembly for a file
+src/MapParser.cpp.s:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.s
+.PHONY : src/MapParser.cpp.s
+
 src/Node.o: src/Node.cpp.o
 
 .PHONY : src/Node.o
@@ -258,6 +285,33 @@ src/Puzzle.cpp.s:
 	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.s
 .PHONY : src/Puzzle.cpp.s
 
+src/PuzzleGenerator.o: src/PuzzleGenerator.cpp.o
+
+.PHONY : src/PuzzleGenerator.o
+
+# target to build an object file
+src/PuzzleGenerator.cpp.o:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o
+.PHONY : src/PuzzleGenerator.cpp.o
+
+src/PuzzleGenerator.i: src/PuzzleGenerator.cpp.i
+
+.PHONY : src/PuzzleGenerator.i
+
+# target to preprocess a source file
+src/PuzzleGenerator.cpp.i:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.i
+.PHONY : src/PuzzleGenerator.cpp.i
+
+src/PuzzleGenerator.s: src/PuzzleGenerator.cpp.s
+
+.PHONY : src/PuzzleGenerator.s
+
+# target to generate assembly for a file
+src/PuzzleGenerator.cpp.s:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.s
+.PHONY : src/PuzzleGenerator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -276,12 +330,18 @@ help:
 	@echo "... src/ErrorManager.o"
 	@echo "... src/ErrorManager.i"
 	@echo "... src/ErrorManager.s"
+	@echo "... src/MapParser.o"
+	@echo "... src/MapParser.i"
+	@echo "... src/MapParser.s"
 	@echo "... src/Node.o"
 	@echo "... src/Node.i"
 	@echo "... src/Node.s"
 	@echo "... src/Puzzle.o"
 	@echo "... src/Puzzle.i"
 	@echo "... src/Puzzle.s"
+	@echo "... src/PuzzleGenerator.o"
+	@echo "... src/PuzzleGenerator.i"
+	@echo "... src/PuzzleGenerator.s"
 .PHONY : help
 
 

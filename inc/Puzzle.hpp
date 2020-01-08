@@ -5,7 +5,6 @@
 # define ABS(number) ((number < 0) ? -number : number)
 
 # include "general.h"
-
 class Puzzle;
 //typedef unsigned int (Puzzle::*PuzzleHeuristic)(PUZZLE);  // Please do this!
 typedef unsigned int (Puzzle::*PuzzleHeuristic)(Node *);  // Please do this!
@@ -14,6 +13,7 @@ class Puzzle
 {
 public:
   static Puzzle& getInstance();
+  void setInitialState(PUZZLE &map, size_t size, HeuristicFunction func);
   bool solve();
 
 // Other non-static member functions
