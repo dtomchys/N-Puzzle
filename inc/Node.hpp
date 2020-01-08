@@ -2,19 +2,29 @@
 # define NODE_HPP
 
 # include "general.h"
+//class Node;
+//
+//struct Tile
+//{
+//    unsigned int x, y;
+//};
 
 class Node
 {
 	public:
-		Node(PUZZLE puzzle, unsigned int h);
+        Node(): f(0),
+                g(0),
+                h(0),
+                parent(NULL)
+        {};
 		~Node();
-		void setParent(Node *parent);
 
-		unsigned int h;
-
-	private:
+        std::pair <unsigned int, unsigned int> emptyTile;
 		Node *parent;
 		PUZZLE puzzle;
+        unsigned int f;
+        unsigned int g;
+        unsigned int h;
 };
 
 #endif

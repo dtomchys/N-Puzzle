@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/Users/dariadryha/N-Puzzle_DD/inc/ArgumentHandler.h
+/Users/dariadryha/N-Puzzle/inc/ArgumentHandler.h
 general.h
-/Users/dariadryha/N-Puzzle_DD/inc/general.h
+/Users/dariadryha/N-Puzzle/inc/general.h
 
-/Users/dariadryha/N-Puzzle_DD/inc/ErrorManager.h
+/Users/dariadryha/N-Puzzle/inc/ErrorManager.h
 general.h
-/Users/dariadryha/N-Puzzle_DD/inc/general.h
+/Users/dariadryha/N-Puzzle/inc/general.h
 
-/Users/dariadryha/N-Puzzle_DD/inc/Node.hpp
+/Users/dariadryha/N-Puzzle/inc/Node.hpp
 general.h
-/Users/dariadryha/N-Puzzle_DD/inc/general.h
+/Users/dariadryha/N-Puzzle/inc/general.h
 
-/Users/dariadryha/N-Puzzle_DD/inc/Puzzle.hpp
+/Users/dariadryha/N-Puzzle/inc/Puzzle.hpp
 general.h
-/Users/dariadryha/N-Puzzle_DD/inc/general.h
+/Users/dariadryha/N-Puzzle/inc/general.h
 
-/Users/dariadryha/N-Puzzle_DD/inc/general.h
+/Users/dariadryha/N-Puzzle/inc/general.h
 iostream
 -
 cstdlib
@@ -34,31 +34,15 @@ unistd.h
 list
 -
 ErrorManager.h
-/Users/dariadryha/N-Puzzle_DD/inc/ErrorManager.h
+/Users/dariadryha/N-Puzzle/inc/ErrorManager.h
 ArgumentHandler.h
-/Users/dariadryha/N-Puzzle_DD/inc/ArgumentHandler.h
+/Users/dariadryha/N-Puzzle/inc/ArgumentHandler.h
 Node.hpp
-/Users/dariadryha/N-Puzzle_DD/inc/Node.hpp
+/Users/dariadryha/N-Puzzle/inc/Node.hpp
 Puzzle.hpp
-/Users/dariadryha/N-Puzzle_DD/inc/Puzzle.hpp
+/Users/dariadryha/N-Puzzle/inc/Puzzle.hpp
 
-/Users/dariadryha/N-Puzzle_DD/main.cpp
-inc/general.h
-/Users/dariadryha/N-Puzzle_DD/inc/general.h
-
-/Users/dariadryha/N-Puzzle_DD/src/ArgumentHandler.cpp
-../inc/ArgumentHandler.h
-/Users/dariadryha/N-Puzzle_DD/inc/ArgumentHandler.h
-
-/Users/dariadryha/N-Puzzle_DD/src/ErrorManager.cpp
-../inc/ErrorManager.h
-/Users/dariadryha/N-Puzzle_DD/inc/ErrorManager.h
-
-/Users/dariadryha/N-Puzzle_DD/src/Node.cpp
+/Users/dariadryha/N-Puzzle/src/Puzzle.cpp
 ../inc/general.h
-/Users/dariadryha/N-Puzzle_DD/inc/general.h
-
-/Users/dariadryha/N-Puzzle_DD/src/Puzzle.cpp
-../inc/general.h
-/Users/dariadryha/N-Puzzle_DD/inc/general.h
+/Users/dariadryha/N-Puzzle/inc/general.h
 

@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dariadryha/N-Puzzle_DD
+CMAKE_SOURCE_DIR = /Users/dariadryha/N-Puzzle
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dariadryha/N-Puzzle_DD/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/dariadryha/N-Puzzle/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/N_Puzzle.dir/depend.make
@@ -59,68 +59,68 @@ include CMakeFiles/N_Puzzle.dir/flags.make
 
 CMakeFiles/N_Puzzle.dir/main.cpp.o: CMakeFiles/N_Puzzle.dir/flags.make
 CMakeFiles/N_Puzzle.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dariadryha/N-Puzzle_DD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/N_Puzzle.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/main.cpp.o -c /Users/dariadryha/N-Puzzle_DD/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dariadryha/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/N_Puzzle.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/main.cpp.o -c /Users/dariadryha/N-Puzzle/main.cpp
 
 CMakeFiles/N_Puzzle.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N_Puzzle.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dariadryha/N-Puzzle_DD/main.cpp > CMakeFiles/N_Puzzle.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dariadryha/N-Puzzle/main.cpp > CMakeFiles/N_Puzzle.dir/main.cpp.i
 
 CMakeFiles/N_Puzzle.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N_Puzzle.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dariadryha/N-Puzzle_DD/main.cpp -o CMakeFiles/N_Puzzle.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dariadryha/N-Puzzle/main.cpp -o CMakeFiles/N_Puzzle.dir/main.cpp.s
 
 CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o: CMakeFiles/N_Puzzle.dir/flags.make
 CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o: ../src/ErrorManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dariadryha/N-Puzzle_DD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o -c /Users/dariadryha/N-Puzzle_DD/src/ErrorManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dariadryha/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o -c /Users/dariadryha/N-Puzzle/src/ErrorManager.cpp
 
 CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dariadryha/N-Puzzle_DD/src/ErrorManager.cpp > CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dariadryha/N-Puzzle/src/ErrorManager.cpp > CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.i
 
 CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dariadryha/N-Puzzle_DD/src/ErrorManager.cpp -o CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dariadryha/N-Puzzle/src/ErrorManager.cpp -o CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.s
 
 CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o: CMakeFiles/N_Puzzle.dir/flags.make
 CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o: ../src/ArgumentHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dariadryha/N-Puzzle_DD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o -c /Users/dariadryha/N-Puzzle_DD/src/ArgumentHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dariadryha/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o -c /Users/dariadryha/N-Puzzle/src/ArgumentHandler.cpp
 
 CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dariadryha/N-Puzzle_DD/src/ArgumentHandler.cpp > CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dariadryha/N-Puzzle/src/ArgumentHandler.cpp > CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.i
 
 CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dariadryha/N-Puzzle_DD/src/ArgumentHandler.cpp -o CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dariadryha/N-Puzzle/src/ArgumentHandler.cpp -o CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.s
 
 CMakeFiles/N_Puzzle.dir/src/Node.cpp.o: CMakeFiles/N_Puzzle.dir/flags.make
 CMakeFiles/N_Puzzle.dir/src/Node.cpp.o: ../src/Node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dariadryha/N-Puzzle_DD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/N_Puzzle.dir/src/Node.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/Node.cpp.o -c /Users/dariadryha/N-Puzzle_DD/src/Node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dariadryha/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/N_Puzzle.dir/src/Node.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/Node.cpp.o -c /Users/dariadryha/N-Puzzle/src/Node.cpp
 
 CMakeFiles/N_Puzzle.dir/src/Node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N_Puzzle.dir/src/Node.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dariadryha/N-Puzzle_DD/src/Node.cpp > CMakeFiles/N_Puzzle.dir/src/Node.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dariadryha/N-Puzzle/src/Node.cpp > CMakeFiles/N_Puzzle.dir/src/Node.cpp.i
 
 CMakeFiles/N_Puzzle.dir/src/Node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N_Puzzle.dir/src/Node.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dariadryha/N-Puzzle_DD/src/Node.cpp -o CMakeFiles/N_Puzzle.dir/src/Node.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dariadryha/N-Puzzle/src/Node.cpp -o CMakeFiles/N_Puzzle.dir/src/Node.cpp.s
 
 CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o: CMakeFiles/N_Puzzle.dir/flags.make
 CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o: ../src/Puzzle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dariadryha/N-Puzzle_DD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o -c /Users/dariadryha/N-Puzzle_DD/src/Puzzle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dariadryha/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o -c /Users/dariadryha/N-Puzzle/src/Puzzle.cpp
 
 CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dariadryha/N-Puzzle_DD/src/Puzzle.cpp > CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dariadryha/N-Puzzle/src/Puzzle.cpp > CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.i
 
 CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dariadryha/N-Puzzle_DD/src/Puzzle.cpp -o CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dariadryha/N-Puzzle/src/Puzzle.cpp -o CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.s
 
 # Object files for target N_Puzzle
 N_Puzzle_OBJECTS = \
@@ -140,7 +140,7 @@ N_Puzzle: CMakeFiles/N_Puzzle.dir/src/Node.cpp.o
 N_Puzzle: CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o
 N_Puzzle: CMakeFiles/N_Puzzle.dir/build.make
 N_Puzzle: CMakeFiles/N_Puzzle.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dariadryha/N-Puzzle_DD/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable N_Puzzle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dariadryha/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable N_Puzzle"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/N_Puzzle.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +153,6 @@ CMakeFiles/N_Puzzle.dir/clean:
 .PHONY : CMakeFiles/N_Puzzle.dir/clean
 
 CMakeFiles/N_Puzzle.dir/depend:
-	cd /Users/dariadryha/N-Puzzle_DD/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dariadryha/N-Puzzle_DD /Users/dariadryha/N-Puzzle_DD /Users/dariadryha/N-Puzzle_DD/cmake-build-debug /Users/dariadryha/N-Puzzle_DD/cmake-build-debug /Users/dariadryha/N-Puzzle_DD/cmake-build-debug/CMakeFiles/N_Puzzle.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/dariadryha/N-Puzzle/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dariadryha/N-Puzzle /Users/dariadryha/N-Puzzle /Users/dariadryha/N-Puzzle/cmake-build-debug /Users/dariadryha/N-Puzzle/cmake-build-debug /Users/dariadryha/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/N_Puzzle.dir/depend
 

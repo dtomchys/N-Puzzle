@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/dariadryha/N-Puzzle_DD/main.cpp" "/Users/dariadryha/N-Puzzle_DD/cmake-build-debug/CMakeFiles/N_Puzzle.dir/main.cpp.o"
-  "/Users/dariadryha/N-Puzzle_DD/src/ArgumentHandler.cpp" "/Users/dariadryha/N-Puzzle_DD/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o"
-  "/Users/dariadryha/N-Puzzle_DD/src/ErrorManager.cpp" "/Users/dariadryha/N-Puzzle_DD/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o"
-  "/Users/dariadryha/N-Puzzle_DD/src/Node.cpp" "/Users/dariadryha/N-Puzzle_DD/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/Node.cpp.o"
-  "/Users/dariadryha/N-Puzzle_DD/src/Puzzle.cpp" "/Users/dariadryha/N-Puzzle_DD/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o"
+  "/Users/dariadryha/N-Puzzle/main.cpp" "/Users/dariadryha/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/main.cpp.o"
+  "/Users/dariadryha/N-Puzzle/src/ArgumentHandler.cpp" "/Users/dariadryha/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o"
+  "/Users/dariadryha/N-Puzzle/src/ErrorManager.cpp" "/Users/dariadryha/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o"
+  "/Users/dariadryha/N-Puzzle/src/Node.cpp" "/Users/dariadryha/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/Node.cpp.o"
+  "/Users/dariadryha/N-Puzzle/src/Puzzle.cpp" "/Users/dariadryha/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
