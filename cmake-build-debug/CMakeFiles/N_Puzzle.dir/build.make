@@ -96,22 +96,9 @@ CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dtomchys/Study/N-Puzzle/src/ArgumentHandler.cpp -o CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.s
 
-CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.o: CMakeFiles/N_Puzzle.dir/flags.make
-CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.o: ../src/PuzzleParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.o -c /Users/dtomchys/Study/N-Puzzle/src/PuzzleParser.cpp
-
-CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dtomchys/Study/N-Puzzle/src/PuzzleParser.cpp > CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.i
-
-CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dtomchys/Study/N-Puzzle/src/PuzzleParser.cpp -o CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.s
-
 CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o: CMakeFiles/N_Puzzle.dir/flags.make
 CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o: ../src/PuzzleGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o -c /Users/dtomchys/Study/N-Puzzle/src/PuzzleGenerator.cpp
 
 CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.i: cmake_force
@@ -121,6 +108,19 @@ CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.i: cmake_force
 CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dtomchys/Study/N-Puzzle/src/PuzzleGenerator.cpp -o CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.s
+
+CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o: CMakeFiles/N_Puzzle.dir/flags.make
+CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o: ../src/MapParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o -c /Users/dtomchys/Study/N-Puzzle/src/MapParser.cpp
+
+CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dtomchys/Study/N-Puzzle/src/MapParser.cpp > CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.i
+
+CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dtomchys/Study/N-Puzzle/src/MapParser.cpp -o CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.s
 
 CMakeFiles/N_Puzzle.dir/src/Node.cpp.o: CMakeFiles/N_Puzzle.dir/flags.make
 CMakeFiles/N_Puzzle.dir/src/Node.cpp.o: ../src/Node.cpp
@@ -153,8 +153,8 @@ N_Puzzle_OBJECTS = \
 "CMakeFiles/N_Puzzle.dir/main.cpp.o" \
 "CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o" \
 "CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o" \
-"CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.o" \
 "CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o" \
+"CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o" \
 "CMakeFiles/N_Puzzle.dir/src/Node.cpp.o" \
 "CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o"
 
@@ -164,8 +164,8 @@ N_Puzzle_EXTERNAL_OBJECTS =
 N_Puzzle: CMakeFiles/N_Puzzle.dir/main.cpp.o
 N_Puzzle: CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o
 N_Puzzle: CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o
-N_Puzzle: CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.o
 N_Puzzle: CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o
+N_Puzzle: CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o
 N_Puzzle: CMakeFiles/N_Puzzle.dir/src/Node.cpp.o
 N_Puzzle: CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o
 N_Puzzle: CMakeFiles/N_Puzzle.dir/build.make

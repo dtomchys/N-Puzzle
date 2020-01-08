@@ -4,25 +4,20 @@ int main(int argc, char **argv) {
     srand(time(NULL));
     ArgumentHandler *argumentHandler = new ArgumentHandler(argv, argc);
     PuzzleConfiguration *configuration = argumentHandler->getPuzzleConfiguration();
+    delete argumentHandler;
     Puzzle& puzzle = Puzzle::getInstance();
     std::cout << (*configuration);
     if (configuration->source == E_RAND) {
-        PuzzleGenerator generator = PuzzleGenerator(configuration);
-        generator.setupPuzzle(puzzle);
+        PuzzleGenerator *generator = new PuzzleGenerator(configuration);
+        generator->setupPuzzle(puzzle);
+        delete generator;
     } else {
-
+        MapParser *parser = new MapParser(configuration);
+        parser->setupPuzzle(puzzle);
+        delete parser;
     }
-
-    //    Dasha
+    delete configuration;
     puzzle.solve();
-
-    //      for(int y=0;y<puzzle.size();++y)
-    // {
-    //     for(int x=0;x<puzzle[y].size();++x)
-    //     {
-    //         cout<<puzzle[y][x]<<ends;
-    //     }
-    //     cout<<endl;
-    // }
+    system("leaks N_Puzzle");
     return 0;
 }

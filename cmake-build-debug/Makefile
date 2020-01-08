@@ -204,6 +204,33 @@ src/ErrorManager.cpp.s:
 	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.s
 .PHONY : src/ErrorManager.cpp.s
 
+src/MapParser.o: src/MapParser.cpp.o
+
+.PHONY : src/MapParser.o
+
+# target to build an object file
+src/MapParser.cpp.o:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o
+.PHONY : src/MapParser.cpp.o
+
+src/MapParser.i: src/MapParser.cpp.i
+
+.PHONY : src/MapParser.i
+
+# target to preprocess a source file
+src/MapParser.cpp.i:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.i
+.PHONY : src/MapParser.cpp.i
+
+src/MapParser.s: src/MapParser.cpp.s
+
+.PHONY : src/MapParser.s
+
+# target to generate assembly for a file
+src/MapParser.cpp.s:
+	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.s
+.PHONY : src/MapParser.cpp.s
+
 src/Node.o: src/Node.cpp.o
 
 .PHONY : src/Node.o
@@ -285,33 +312,6 @@ src/PuzzleGenerator.cpp.s:
 	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.s
 .PHONY : src/PuzzleGenerator.cpp.s
 
-src/PuzzleParser.o: src/PuzzleParser.cpp.o
-
-.PHONY : src/PuzzleParser.o
-
-# target to build an object file
-src/PuzzleParser.cpp.o:
-	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.o
-.PHONY : src/PuzzleParser.cpp.o
-
-src/PuzzleParser.i: src/PuzzleParser.cpp.i
-
-.PHONY : src/PuzzleParser.i
-
-# target to preprocess a source file
-src/PuzzleParser.cpp.i:
-	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.i
-.PHONY : src/PuzzleParser.cpp.i
-
-src/PuzzleParser.s: src/PuzzleParser.cpp.s
-
-.PHONY : src/PuzzleParser.s
-
-# target to generate assembly for a file
-src/PuzzleParser.cpp.s:
-	$(MAKE) -f CMakeFiles/N_Puzzle.dir/build.make CMakeFiles/N_Puzzle.dir/src/PuzzleParser.cpp.s
-.PHONY : src/PuzzleParser.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -330,6 +330,9 @@ help:
 	@echo "... src/ErrorManager.o"
 	@echo "... src/ErrorManager.i"
 	@echo "... src/ErrorManager.s"
+	@echo "... src/MapParser.o"
+	@echo "... src/MapParser.i"
+	@echo "... src/MapParser.s"
 	@echo "... src/Node.o"
 	@echo "... src/Node.i"
 	@echo "... src/Node.s"
@@ -339,9 +342,6 @@ help:
 	@echo "... src/PuzzleGenerator.o"
 	@echo "... src/PuzzleGenerator.i"
 	@echo "... src/PuzzleGenerator.s"
-	@echo "... src/PuzzleParser.o"
-	@echo "... src/PuzzleParser.i"
-	@echo "... src/PuzzleParser.s"
 .PHONY : help
 
 

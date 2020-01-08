@@ -18,6 +18,10 @@ general.h
 general.h
 /Users/dtomchys/Study/N-Puzzle/inc/general.h
 
+/Users/dtomchys/Study/N-Puzzle/inc/MapParser.h
+general.h
+/Users/dtomchys/Study/N-Puzzle/inc/general.h
+
 /Users/dtomchys/Study/N-Puzzle/inc/Node.hpp
 general.h
 /Users/dtomchys/Study/N-Puzzle/inc/general.h
@@ -41,6 +45,8 @@ unistd.h
 -
 list
 -
+fstream
+-
 ErrorManager.h
 /Users/dtomchys/Study/N-Puzzle/inc/ErrorManager.h
 ArgumentHandler.h
@@ -51,28 +57,10 @@ Puzzle.hpp
 /Users/dtomchys/Study/N-Puzzle/inc/Puzzle.hpp
 PuzzleGenerator.h
 /Users/dtomchys/Study/N-Puzzle/inc/PuzzleGenerator.h
+MapParser.h
+/Users/dtomchys/Study/N-Puzzle/inc/MapParser.h
 
 /Users/dtomchys/Study/N-Puzzle/main.cpp
 inc/general.h
 /Users/dtomchys/Study/N-Puzzle/inc/general.h
-
-/Users/dtomchys/Study/N-Puzzle/src/ArgumentHandler.cpp
-../inc/ArgumentHandler.h
-/Users/dtomchys/Study/N-Puzzle/inc/ArgumentHandler.h
-
-/Users/dtomchys/Study/N-Puzzle/src/ErrorManager.cpp
-../inc/ErrorManager.h
-/Users/dtomchys/Study/N-Puzzle/inc/ErrorManager.h
-
-/Users/dtomchys/Study/N-Puzzle/src/Node.cpp
-../inc/general.h
-/Users/dtomchys/Study/N-Puzzle/inc/general.h
-
-/Users/dtomchys/Study/N-Puzzle/src/Puzzle.cpp
-../inc/Puzzle.hpp
-/Users/dtomchys/Study/N-Puzzle/inc/Puzzle.hpp
-
-/Users/dtomchys/Study/N-Puzzle/src/PuzzleGenerator.cpp
-../inc/PuzzleGenerator.h
-/Users/dtomchys/Study/N-Puzzle/inc/PuzzleGenerator.h
 

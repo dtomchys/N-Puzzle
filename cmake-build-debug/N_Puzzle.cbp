@@ -89,6 +89,9 @@
 		<Unit filename="/Users/dtomchys/Study/N-Puzzle/src/ErrorManager.cpp">
 			<Option target="N_Puzzle"/>
 		</Unit>
+		<Unit filename="/Users/dtomchys/Study/N-Puzzle/src/MapParser.cpp">
+			<Option target="N_Puzzle"/>
+		</Unit>
 		<Unit filename="/Users/dtomchys/Study/N-Puzzle/src/Node.cpp">
 			<Option target="N_Puzzle"/>
 		</Unit>
@@ -96,9 +99,6 @@
 			<Option target="N_Puzzle"/>
 		</Unit>
 		<Unit filename="/Users/dtomchys/Study/N-Puzzle/src/PuzzleGenerator.cpp">
-			<Option target="N_Puzzle"/>
-		</Unit>
-		<Unit filename="/Users/dtomchys/Study/N-Puzzle/src/PuzzleParser.cpp">
 			<Option target="N_Puzzle"/>
 		</Unit>
 		<Unit filename="/Users/dtomchys/Study/N-Puzzle/CMakeLists.txt">

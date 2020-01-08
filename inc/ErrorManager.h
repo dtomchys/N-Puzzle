@@ -8,6 +8,7 @@
 #include "general.h"
 
 enum ARG_ERRORS { INVALID_FILE, INVALID_ALGO, INVALID_FUNC, INVALID_SIZE, INVALID_ITERATIONS };
+enum PARSING_ERRORS { CANT_READ, INVALID_PUZZLE };
 
 class ErrorManager {
 private:
@@ -23,6 +24,7 @@ public:
     }
     void showUsage();
     void showArgErrorAndExit(ARG_ERRORS error);
+    void showParsingErrorAndExit(PARSING_ERRORS error);
 };
 
 

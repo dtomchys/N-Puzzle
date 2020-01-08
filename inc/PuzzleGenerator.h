@@ -14,7 +14,7 @@ class PuzzleGenerator {
 
 private:
     PuzzleConfiguration *conf;
-    PUZZLE          map;
+    PUZZLE          *map;
 
 public:
     PuzzleGenerator(PuzzleConfiguration *configuration);

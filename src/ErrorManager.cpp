@@ -35,3 +35,17 @@ void ErrorManager::showArgErrorAndExit(ARG_ERRORS error) {
     std::cerr << errorMessage << std::endl;
     exit(1);
 }
+
+void ErrorManager::showParsingErrorAndExit(PARSING_ERRORS error) {
+    std::string errorMessage;
+    switch (error) {
+        case CANT_READ:
+            errorMessage = "Invalid file! Please, make sure the file exists or has correct permission access.";
+            break;
+        case INVALID_PUZZLE:
+            errorMessage = "Invalid puzzle! Please, correct the puzzle and then retry!";
+            break;
+    }
+    std::cerr << errorMessage << std::endl;
+    exit(1);
+}
