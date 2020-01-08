@@ -36,7 +36,6 @@ std::pair <unsigned int, unsigned int> Puzzle::_findTilePosition(PUZZLE state, u
     std::vector<unsigned int>::iterator column;
     PUZZLE::iterator row;
     unsigned int x = 0, y = 0;
-
     for (row = state.begin(); row != state.end(); row++) {
         column = find(row->begin(), row->end(), tileValue);
         if(column != row->end()) {

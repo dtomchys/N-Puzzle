@@ -60,7 +60,11 @@ PuzzleGenerator.h
 MapParser.h
 /Users/dtomchys/Study/N-Puzzle/inc/MapParser.h
 
-/Users/dtomchys/Study/N-Puzzle/main.cpp
-inc/general.h
-/Users/dtomchys/Study/N-Puzzle/inc/general.h
+/Users/dtomchys/Study/N-Puzzle/src/ArgumentHandler.cpp
+../inc/ArgumentHandler.h
+/Users/dtomchys/Study/N-Puzzle/inc/ArgumentHandler.h
+
+/Users/dtomchys/Study/N-Puzzle/src/Puzzle.cpp
+../inc/Puzzle.hpp
+/Users/dtomchys/Study/N-Puzzle/inc/Puzzle.hpp
 
