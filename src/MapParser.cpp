@@ -67,6 +67,8 @@ PUZZLE* MapParser::validateAndSetMap(std::string fileContent) {
                 (*targetState)[y][x] = std::stoi(fileContent.substr(0, numLength));
                 totalSum += (*targetState)[y][x];
                 fileContent.erase(0, numLength + (x < size - 1 ? 1 : 0));
+                while (fileContent[0] == ' ' )
+                    fileContent.erase(0, 1);
             }
             while (fileContent[0] == '\n' || fileContent[0] == ' ' )
                 fileContent.erase(0, 1);

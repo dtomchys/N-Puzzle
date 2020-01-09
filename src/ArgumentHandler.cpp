@@ -57,8 +57,10 @@ PuzzleConfiguration* ArgumentHandler::makeDefaultConfiguration() {
 }
 
 void ArgumentHandler::checkAndSetFileConfiguration(std::string file, PuzzleConfiguration *config) {
-    if (access( file.c_str(), F_OK ) == -1)
+    std::cout << file;
+    if (access(file.c_str(), F_OK) == -1) {
         ErrorManager::shared().showArgErrorAndExit(INVALID_FILE);
+    }
     config->setSourcePath(file);
 }
 
