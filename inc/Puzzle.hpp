@@ -27,11 +27,10 @@ private:
     unsigned int _manhattanDistance(Node *current);
     PUZZLE _countTargetState(void);
     std::list<Node *> checkNeighboringNodes(Node *current);
-    Node* checkAvailability(std::list<Node *> &openedList, Node *next);
     Node* getNextNode(Node *current, std::pair <unsigned int, unsigned int> tile);
     std::vector<unsigned int> boardToVector();
-    void addOpenedNode(std::list<Node *> &list, Node *openedNode);
     void printPath(Node *target);
+    std::string generateUniqueKey(PUZZLE const &puzzle);
 
     PUZZLE _startState;
     PUZZLE _targetState;

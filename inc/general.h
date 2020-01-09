@@ -15,6 +15,8 @@ typedef struct PuzzleConfiguration;
 #include <unistd.h>
 #include <list>
 #include <fstream>
+#include <map>
+#include <queue>
 
 #include "ErrorManager.h"
 #include "ArgumentHandler.h"
