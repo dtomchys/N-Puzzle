@@ -25,6 +25,7 @@ class Node
         unsigned int f;
         unsigned int g;
         unsigned int h;
+        std::string uniqueKey;
 };
 
 #endif
