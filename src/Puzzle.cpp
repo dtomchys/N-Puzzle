@@ -20,7 +20,7 @@ void Puzzle::setInitialState(PUZZLE &map, size_t size, HeuristicFunction func) {
 
         for(int y=0; y < this->_startState.size();++y) {
         for(int x=0;x<this->_startState[y].size();++x) {
-            std::cout<<this->_startState[y][x]<< " ";
+            std::cout << this->_startState[y][x]<< " ";
         }
         std::cout<<std::endl;
     }
