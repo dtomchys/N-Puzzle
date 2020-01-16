@@ -7,7 +7,7 @@ void Puzzle::setInitialState(PUZZLE &map, size_t size, HeuristicFunction func) {
     this->_startState = map;
     switch (func) {
         case E_MANHATTAN: {
-            this->_heuristic = &Puzzle::_misplacedTiles;
+            this->_heuristic = &Puzzle::_manhattanDistance;
             break;
         }
         default: {
