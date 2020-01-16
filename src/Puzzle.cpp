@@ -7,7 +7,7 @@ void Puzzle::setInitialState(PUZZLE &map, size_t size, HeuristicFunction func) {
     this->_startState = map;
     switch (func) {
         case E_MANHATTAN: {
-            this->_heuristic = &Puzzle::_manhattanDistance;
+            this->_heuristic = &Puzzle::_misplacedTiles;
             break;
         }
         default: {
@@ -16,6 +16,8 @@ void Puzzle::setInitialState(PUZZLE &map, size_t size, HeuristicFunction func) {
         }
     }
     this->_targetState = this->_countTargetState();
+    this->_targetCoords = this->_countTargetCoords();
+
         for(int y=0; y < this->_startState.size();++y) {
         for(int x=0;x<this->_startState[y].size();++x) {
             std::cout<<this->_startState[y][x]<< " ";
@@ -44,7 +46,7 @@ Puzzle& Puzzle::getInstance()
 	return instance;
 }
 
-std::pair <unsigned int, unsigned int> Puzzle::_findTilePosition(PUZZLE state, unsigned int tileValue)
+COORDS Puzzle::_findTilePosition(PUZZLE state, unsigned int tileValue)
 {
     std::vector<unsigned int>::iterator column;
     PUZZLE::iterator row;
@@ -61,37 +63,94 @@ std::pair <unsigned int, unsigned int> Puzzle::_findTilePosition(PUZZLE state, u
     return std::make_pair(y, x);
 }
 
-unsigned int Puzzle::_manhattanDistance(Node *node)
+unsigned int Puzzle::_linearConflict(Node *node)
+{
+    unsigned int h = 0;
+    COORDS currentTile;
+
+    for (int y = 0; y < this->_boardSize; ++y) {
+        for (int x = 0; x < this->_boardSize; ++x) {
+            currentTile = std::make_pair(y, x);
+            h += this->rowConflict(node, currentTile);
+            h += this->columnConflict(node, currentTile);
+        }
+    }
+
+    return h * 2 + this->_manhattanDistance(node);
+}
+
+unsigned int Puzzle::rowConflict(Node *node, COORDS current)
 {
     unsigned int h = 0;
 
-    if (!node->parent) {
-        for (int y = 0; y < this->_boardSize; ++y) {
-            for (int x = 0; x < this->_boardSize; ++x) {
-                if (node->puzzle[y][x] != this->_targetState[y][x]) {
-                    std::pair<unsigned int, unsigned int> finalPosition = this->_findTilePosition(this->_targetState,
-                                                                                                  node->puzzle[y][x]);
-
-                    h += std::abs((int)(y - finalPosition.first)) + std::abs((int)(x - finalPosition.second));
-                }
-            }
+    for (int i = 0; i < this->_boardSize; ++i) {
+        if (node->puzzle[current.first][current.second] != node->puzzle[current.first][i] &&
+            current.first == this->_targetCoords[node->puzzle[current.first][current.second]].first &&
+            current.first == this->_targetCoords[node->puzzle[current.first][i]].first &&
+            current.second > i &&
+            this->_targetCoords[node->puzzle[current.first][current.second]].second <= this->_targetCoords[node->puzzle[current.first][i]].second
+        ) {
+            h++;
         }
-    } else {
-        std::pair<unsigned int, unsigned int> finalPosition = this->_findTilePosition(this->_targetState,
-                                                                                      node->parent->puzzle[node->emptyTile.first][node->emptyTile.second]);
-
-        h = node->parent->h - (std::abs((int)(node->emptyTile.first - finalPosition.first)) + std::abs((int)(node->emptyTile.second - finalPosition.second)));
-        h += std::abs((int)(node->parent->emptyTile.first - finalPosition.first)) + std::abs((int)(node->parent->emptyTile.second - finalPosition.second));
-
-        finalPosition = this->_findTilePosition(this->_targetState);
-        h -= std::abs((int)(node->parent->emptyTile.first - finalPosition.first)) + std::abs((int)(node->parent->emptyTile.second - finalPosition.second));
-        h += std::abs((int)(node->emptyTile.first - finalPosition.first)) + std::abs((int)(node->emptyTile.second - finalPosition.second));
     }
 
     return h;
 }
 
-Node* Puzzle::getNextNode(Node *current, std::pair <unsigned int, unsigned int> tile)
+unsigned int Puzzle::columnConflict(Node *node, COORDS current)
+{
+    static int z = 0;
+    unsigned int h = 0;
+
+    for (int i = 0; i < this->_boardSize; ++i) {
+        if (node->puzzle[current.first][current.second] != node->puzzle[i][current.second] &&
+                current.second == this->_targetCoords[node->puzzle[current.first][current.second]].second &&
+                current.second == this->_targetCoords[node->puzzle[i][current.second]].second &&
+                current.first > i &&
+                this->_targetCoords[node->puzzle[current.first][current.second]].first <= this->_targetCoords[node->puzzle[i][current.second]].first
+            ) {
+            h++;
+        }
+    }
+
+    return h;
+}
+
+unsigned int Puzzle::_misplacedTiles(Node *node)
+{
+    unsigned int h = 0;
+
+    for (int y = 0; y < this->_boardSize; ++y) {
+        for (int x = 0; x < this->_boardSize; ++x) {
+            if (node->puzzle[y][x] != this->_targetState[y][x]) {
+                h++;
+            }
+        }
+    }
+
+    return h;
+}
+
+unsigned int Puzzle::_manhattanDistance(Node *node)
+{
+    unsigned int h = 0;
+    COORDS finalPosition;
+
+    for (int y = 0; y < this->_boardSize; ++y) {
+        for (int x = 0; x < this->_boardSize; ++x) {
+            if (node->puzzle[y][x] != this->_targetState[y][x]) {
+                finalPosition = this->_findTilePosition(this->_targetState,
+                                                                                              node->puzzle[y][x]);
+
+                h += std::abs((int)(y - finalPosition.first)) + std::abs((int)(x - finalPosition.second));
+            }
+        }
+    }
+
+    return h;
+}
+
+Node* Puzzle::getNextNode(Node *current, COORDS tile)
 {
     Node *next = new Node();
 
@@ -111,24 +170,24 @@ std::list<Node *> Puzzle::checkNeighboringNodes(Node *current)
 {
     std::list<Node *> neighbors;
 
-    if (current->emptyTile.second > 0) {
-        neighbors.push_back(this->getNextNode(current,
-                std::make_pair(current->emptyTile.first, current->emptyTile.second - 1)));
-    }
-
-    if (current->emptyTile.second < this->_boardSize - 1) {
-        neighbors.push_back(this->getNextNode(current,
-                std::make_pair(current->emptyTile.first, current->emptyTile.second + 1)));
-    }
-
     if (current->emptyTile.first > 0) {
         neighbors.push_back(this->getNextNode(current,
                 std::make_pair(current->emptyTile.first - 1, current->emptyTile.second)));
     }
 
+    if (current->emptyTile.second < this->_boardSize - 1) {
+        neighbors.push_back(this->getNextNode(current,
+                                              std::make_pair(current->emptyTile.first, current->emptyTile.second + 1)));
+    }
+
     if (current->emptyTile.first < this->_boardSize - 1) {
         neighbors.push_back(this->getNextNode(current,
                 std::make_pair(current->emptyTile.first + 1, current->emptyTile.second)));
+    }
+
+    if (current->emptyTile.second > 0) {
+        neighbors.push_back(this->getNextNode(current,
+                                              std::make_pair(current->emptyTile.first, current->emptyTile.second - 1)));
     }
 
     return neighbors;
@@ -177,28 +236,33 @@ bool Puzzle::solve()
 
     Node *start = new Node();
     Node *current;
+    std::list<Node *> all;
 
     start->puzzle = this->_startState;
     start->h = (this->*_heuristic)(start);
     start->f = start->h;
     start->emptyTile = this->_findTilePosition(start->puzzle);
     start->uniqueKey = this->generateUniqueKey(start->puzzle);
+    all.push_back(start);
 
     nodes.push(start);
-    int i = 0, j = 0, z = 0;
+    opened[start->uniqueKey] = start;
+    int i = 0, j = 0;
     while (!nodes.empty()) {
         current = nodes.top();
 
         if (!current->h) {
             this->printPath(current);
+            for (auto it = all.begin(); it != all.end(); ++it) {
+                delete (*it);
+            }
             return true;
         }
 
         nodes.pop();
-        if (opened.find(current->uniqueKey) != opened.end()) {
-            if (current->g > opened[current->uniqueKey]->g) {
-                continue ;
-            }
+
+        if (closed.find(current->uniqueKey) != closed.end()) {
+            continue;
         }
 
         closed[current->uniqueKey] = current;
@@ -206,21 +270,39 @@ bool Puzzle::solve()
         std::list<Node *> neighbors = this->checkNeighboringNodes(current);
 
         for (auto &neighbor : neighbors) {
-            if (closed.find(neighbor->uniqueKey) != closed.end()) { continue; }
+            if (closed.find(neighbor->uniqueKey) != closed.end()) {
+                delete neighbor;
+                continue;
+            }
 
             if (opened.find(neighbor->uniqueKey) != opened.end()) {
-                if (opened[neighbor->uniqueKey]->g > neighbor->g) {
-                    i++;
-                    opened[neighbor->uniqueKey] = neighbor;
+                if (opened[neighbor->uniqueKey]->g <= neighbor->g) {
+                    delete neighbor;
+                    continue ;
                 }
-            } else {
-                opened[neighbor->uniqueKey] = neighbor;
             }
+
+            opened[neighbor->uniqueKey] = neighbor;
             nodes.push(neighbor);
+            all.push_back(neighbor);
         }
     }
 
     return true;
+}
+
+
+std::map<unsigned int, COORDS> Puzzle::_countTargetCoords()
+{
+    std::map<unsigned int, COORDS> targetCoords;
+
+    for(int y = 0; y < this->_boardSize; ++y) {
+        for(int x=0;x<this->_boardSize; ++x) {
+            targetCoords[this->_targetState[y][x]] = std::make_pair(y, x);
+        }
+    }
+
+    return targetCoords;
 }
 
 PUZZLE Puzzle::_countTargetState()

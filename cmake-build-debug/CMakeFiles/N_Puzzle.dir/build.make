@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dtomchys/Study/N-Puzzle
+CMAKE_SOURCE_DIR = /Users/dariadryha/heuristicsAdd/N-Puzzle
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dtomchys/Study/N-Puzzle/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/N_Puzzle.dir/depend.make
@@ -59,94 +59,94 @@ include CMakeFiles/N_Puzzle.dir/flags.make
 
 CMakeFiles/N_Puzzle.dir/main.cpp.o: CMakeFiles/N_Puzzle.dir/flags.make
 CMakeFiles/N_Puzzle.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/N_Puzzle.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/main.cpp.o -c /Users/dtomchys/Study/N-Puzzle/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/N_Puzzle.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/main.cpp.o -c /Users/dariadryha/heuristicsAdd/N-Puzzle/main.cpp
 
 CMakeFiles/N_Puzzle.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N_Puzzle.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dtomchys/Study/N-Puzzle/main.cpp > CMakeFiles/N_Puzzle.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dariadryha/heuristicsAdd/N-Puzzle/main.cpp > CMakeFiles/N_Puzzle.dir/main.cpp.i
 
 CMakeFiles/N_Puzzle.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N_Puzzle.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dtomchys/Study/N-Puzzle/main.cpp -o CMakeFiles/N_Puzzle.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dariadryha/heuristicsAdd/N-Puzzle/main.cpp -o CMakeFiles/N_Puzzle.dir/main.cpp.s
 
 CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o: CMakeFiles/N_Puzzle.dir/flags.make
 CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o: ../src/ErrorManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o -c /Users/dtomchys/Study/N-Puzzle/src/ErrorManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o -c /Users/dariadryha/heuristicsAdd/N-Puzzle/src/ErrorManager.cpp
 
 CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dtomchys/Study/N-Puzzle/src/ErrorManager.cpp > CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dariadryha/heuristicsAdd/N-Puzzle/src/ErrorManager.cpp > CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.i
 
 CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dtomchys/Study/N-Puzzle/src/ErrorManager.cpp -o CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dariadryha/heuristicsAdd/N-Puzzle/src/ErrorManager.cpp -o CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.s
 
 CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o: CMakeFiles/N_Puzzle.dir/flags.make
 CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o: ../src/ArgumentHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o -c /Users/dtomchys/Study/N-Puzzle/src/ArgumentHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o -c /Users/dariadryha/heuristicsAdd/N-Puzzle/src/ArgumentHandler.cpp
 
 CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dtomchys/Study/N-Puzzle/src/ArgumentHandler.cpp > CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dariadryha/heuristicsAdd/N-Puzzle/src/ArgumentHandler.cpp > CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.i
 
 CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dtomchys/Study/N-Puzzle/src/ArgumentHandler.cpp -o CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dariadryha/heuristicsAdd/N-Puzzle/src/ArgumentHandler.cpp -o CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.s
 
 CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o: CMakeFiles/N_Puzzle.dir/flags.make
 CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o: ../src/PuzzleGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o -c /Users/dtomchys/Study/N-Puzzle/src/PuzzleGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o -c /Users/dariadryha/heuristicsAdd/N-Puzzle/src/PuzzleGenerator.cpp
 
 CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dtomchys/Study/N-Puzzle/src/PuzzleGenerator.cpp > CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dariadryha/heuristicsAdd/N-Puzzle/src/PuzzleGenerator.cpp > CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.i
 
 CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dtomchys/Study/N-Puzzle/src/PuzzleGenerator.cpp -o CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dariadryha/heuristicsAdd/N-Puzzle/src/PuzzleGenerator.cpp -o CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.s
 
 CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o: CMakeFiles/N_Puzzle.dir/flags.make
 CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o: ../src/MapParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o -c /Users/dtomchys/Study/N-Puzzle/src/MapParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o -c /Users/dariadryha/heuristicsAdd/N-Puzzle/src/MapParser.cpp
 
 CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dtomchys/Study/N-Puzzle/src/MapParser.cpp > CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dariadryha/heuristicsAdd/N-Puzzle/src/MapParser.cpp > CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.i
 
 CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dtomchys/Study/N-Puzzle/src/MapParser.cpp -o CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dariadryha/heuristicsAdd/N-Puzzle/src/MapParser.cpp -o CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.s
 
 CMakeFiles/N_Puzzle.dir/src/Node.cpp.o: CMakeFiles/N_Puzzle.dir/flags.make
 CMakeFiles/N_Puzzle.dir/src/Node.cpp.o: ../src/Node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/N_Puzzle.dir/src/Node.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/Node.cpp.o -c /Users/dtomchys/Study/N-Puzzle/src/Node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/N_Puzzle.dir/src/Node.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/Node.cpp.o -c /Users/dariadryha/heuristicsAdd/N-Puzzle/src/Node.cpp
 
 CMakeFiles/N_Puzzle.dir/src/Node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N_Puzzle.dir/src/Node.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dtomchys/Study/N-Puzzle/src/Node.cpp > CMakeFiles/N_Puzzle.dir/src/Node.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dariadryha/heuristicsAdd/N-Puzzle/src/Node.cpp > CMakeFiles/N_Puzzle.dir/src/Node.cpp.i
 
 CMakeFiles/N_Puzzle.dir/src/Node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N_Puzzle.dir/src/Node.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dtomchys/Study/N-Puzzle/src/Node.cpp -o CMakeFiles/N_Puzzle.dir/src/Node.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dariadryha/heuristicsAdd/N-Puzzle/src/Node.cpp -o CMakeFiles/N_Puzzle.dir/src/Node.cpp.s
 
 CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o: CMakeFiles/N_Puzzle.dir/flags.make
 CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o: ../src/Puzzle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o -c /Users/dtomchys/Study/N-Puzzle/src/Puzzle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o -c /Users/dariadryha/heuristicsAdd/N-Puzzle/src/Puzzle.cpp
 
 CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dtomchys/Study/N-Puzzle/src/Puzzle.cpp > CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dariadryha/heuristicsAdd/N-Puzzle/src/Puzzle.cpp > CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.i
 
 CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dtomchys/Study/N-Puzzle/src/Puzzle.cpp -o CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dariadryha/heuristicsAdd/N-Puzzle/src/Puzzle.cpp -o CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.s
 
 # Object files for target N_Puzzle
 N_Puzzle_OBJECTS = \
@@ -170,7 +170,7 @@ N_Puzzle: CMakeFiles/N_Puzzle.dir/src/Node.cpp.o
 N_Puzzle: CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o
 N_Puzzle: CMakeFiles/N_Puzzle.dir/build.make
 N_Puzzle: CMakeFiles/N_Puzzle.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable N_Puzzle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable N_Puzzle"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/N_Puzzle.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -183,6 +183,6 @@ CMakeFiles/N_Puzzle.dir/clean:
 .PHONY : CMakeFiles/N_Puzzle.dir/clean
 
 CMakeFiles/N_Puzzle.dir/depend:
-	cd /Users/dtomchys/Study/N-Puzzle/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dtomchys/Study/N-Puzzle /Users/dtomchys/Study/N-Puzzle /Users/dtomchys/Study/N-Puzzle/cmake-build-debug /Users/dtomchys/Study/N-Puzzle/cmake-build-debug /Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dariadryha/heuristicsAdd/N-Puzzle /Users/dariadryha/heuristicsAdd/N-Puzzle /Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug /Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug /Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/N_Puzzle.dir/depend
 

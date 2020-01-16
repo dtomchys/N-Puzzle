@@ -18,6 +18,9 @@ int main(int argc, char **argv) {
     }
     delete configuration;
     puzzle.solve();
-//    system("leaks N_Puzzle");
+//    while (1) {
+//
+//    }
+    //system("leaks N_Puzzle");
     return 0;
 }

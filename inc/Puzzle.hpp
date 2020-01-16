@@ -8,6 +8,7 @@
 class Puzzle;
 //typedef unsigned int (Puzzle::*PuzzleHeuristic)(PUZZLE);  // Please do this!
 typedef unsigned int (Puzzle::*PuzzleHeuristic)(Node *);  // Please do this!
+typedef std::pair <unsigned int, unsigned int> COORDS;
 
 class Puzzle
 {
@@ -23,18 +24,24 @@ private:
     Puzzle(const Puzzle&);                 // Prevent copy-construction
     Puzzle& operator=(const Puzzle&);      // Prevent assignment
 
-    std::pair <unsigned int, unsigned int> _findTilePosition(PUZZLE state, unsigned int tile = 0);
+    COORDS _findTilePosition(PUZZLE state, unsigned int tile = 0);
     unsigned int _manhattanDistance(Node *current);
+    unsigned int _misplacedTiles(Node *node);
+    unsigned int _linearConflict(Node *node);
     PUZZLE _countTargetState(void);
     std::list<Node *> checkNeighboringNodes(Node *current);
-    Node* getNextNode(Node *current, std::pair <unsigned int, unsigned int> tile);
+    Node* getNextNode(Node *current, COORDS tile);
     std::vector<unsigned int> boardToVector();
+    unsigned int rowConflict(Node *node, COORDS current);
+    unsigned int columnConflict(Node *node, COORDS current);
+    std::map<unsigned int, COORDS> _countTargetCoords();
     void printPath(Node *target);
     std::string generateUniqueKey(PUZZLE const &puzzle);
 
     PUZZLE _startState;
     PUZZLE _targetState;
     PuzzleHeuristic _heuristic;
+    std::map<unsigned int, COORDS> _targetCoords;
     size_t _boardSize;
 };
 

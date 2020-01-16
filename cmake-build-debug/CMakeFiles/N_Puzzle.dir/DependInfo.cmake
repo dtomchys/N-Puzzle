@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/dtomchys/Study/N-Puzzle/main.cpp" "/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/main.cpp.o"
-  "/Users/dtomchys/Study/N-Puzzle/src/ArgumentHandler.cpp" "/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o"
-  "/Users/dtomchys/Study/N-Puzzle/src/ErrorManager.cpp" "/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o"
-  "/Users/dtomchys/Study/N-Puzzle/src/MapParser.cpp" "/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o"
-  "/Users/dtomchys/Study/N-Puzzle/src/Node.cpp" "/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/Node.cpp.o"
-  "/Users/dtomchys/Study/N-Puzzle/src/Puzzle.cpp" "/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o"
-  "/Users/dtomchys/Study/N-Puzzle/src/PuzzleGenerator.cpp" "/Users/dtomchys/Study/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o"
+  "/Users/dariadryha/heuristicsAdd/N-Puzzle/main.cpp" "/Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/main.cpp.o"
+  "/Users/dariadryha/heuristicsAdd/N-Puzzle/src/ArgumentHandler.cpp" "/Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o"
+  "/Users/dariadryha/heuristicsAdd/N-Puzzle/src/ErrorManager.cpp" "/Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o"
+  "/Users/dariadryha/heuristicsAdd/N-Puzzle/src/MapParser.cpp" "/Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o"
+  "/Users/dariadryha/heuristicsAdd/N-Puzzle/src/Node.cpp" "/Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/Node.cpp.o"
+  "/Users/dariadryha/heuristicsAdd/N-Puzzle/src/Puzzle.cpp" "/Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o"
+  "/Users/dariadryha/heuristicsAdd/N-Puzzle/src/PuzzleGenerator.cpp" "/Users/dariadryha/heuristicsAdd/N-Puzzle/cmake-build-debug/CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
