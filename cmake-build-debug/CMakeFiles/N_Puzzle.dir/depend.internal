@@ -37,15 +37,6 @@ CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o
  /Users/dariadryha/heuristicsAdd/N-Puzzle/inc/PuzzleGenerator.h
  /Users/dariadryha/heuristicsAdd/N-Puzzle/inc/general.h
  /Users/dariadryha/heuristicsAdd/N-Puzzle/src/MapParser.cpp
-CMakeFiles/N_Puzzle.dir/src/Node.cpp.o
- /Users/dariadryha/heuristicsAdd/N-Puzzle/inc/ArgumentHandler.h
- /Users/dariadryha/heuristicsAdd/N-Puzzle/inc/ErrorManager.h
- /Users/dariadryha/heuristicsAdd/N-Puzzle/inc/MapParser.h
- /Users/dariadryha/heuristicsAdd/N-Puzzle/inc/Node.hpp
- /Users/dariadryha/heuristicsAdd/N-Puzzle/inc/Puzzle.hpp
- /Users/dariadryha/heuristicsAdd/N-Puzzle/inc/PuzzleGenerator.h
- /Users/dariadryha/heuristicsAdd/N-Puzzle/inc/general.h
- /Users/dariadryha/heuristicsAdd/N-Puzzle/src/Node.cpp
 CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o
  /Users/dariadryha/heuristicsAdd/N-Puzzle/inc/ArgumentHandler.h
  /Users/dariadryha/heuristicsAdd/N-Puzzle/inc/ErrorManager.h

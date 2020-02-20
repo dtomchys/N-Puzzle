@@ -3,7 +3,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/N_Puzzle.dir/src/ArgumentHandler.cpp.o"
   "CMakeFiles/N_Puzzle.dir/src/ErrorManager.cpp.o"
   "CMakeFiles/N_Puzzle.dir/src/MapParser.cpp.o"
-  "CMakeFiles/N_Puzzle.dir/src/Node.cpp.o"
   "CMakeFiles/N_Puzzle.dir/src/Puzzle.cpp.o"
   "CMakeFiles/N_Puzzle.dir/src/PuzzleGenerator.cpp.o"
   "N_Puzzle"

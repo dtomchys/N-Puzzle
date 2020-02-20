@@ -2,30 +2,35 @@
 # define NODE_HPP
 
 # include "general.h"
-//class Node;
-//
-//struct Tile
-//{
-//    unsigned int x, y;
-//};
 
-class Node
+struct Node
 {
-	public:
-        Node(): f(0),
-                g(0),
-                h(0),
-                parent(NULL)
-        {};
-		~Node();
+    std::pair <unsigned int, unsigned int> emptyTile;
+    Node *parent;
+    PUZZLE puzzle;
+    unsigned int f;
+    unsigned int g;
+    unsigned int h;
+    std::string uniqueKey;
+    std::string move;
 
-        std::pair <unsigned int, unsigned int> emptyTile;
-		Node *parent;
-		PUZZLE puzzle;
-        unsigned int f;
-        unsigned int g;
-        unsigned int h;
-        std::string uniqueKey;
+    Node(): f(0),
+            g(0),
+            h(0),
+            parent(NULL)
+    {};
+
+    void generateUniqueKey(void) {
+        unsigned int size;
+
+        size = this->puzzle.size();
+
+        for (int y = 0; y < size; ++y) {
+            for (int x = 0; x < size; ++x) {
+                this->uniqueKey += this->puzzle[y][x] + '0';
+            }
+        }
+    }
 };
 
 #endif
